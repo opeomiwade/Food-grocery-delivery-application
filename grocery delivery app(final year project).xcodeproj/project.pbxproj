@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E01BAC129EB4E2E007F70CF /* classifierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01BAC029EB4E2E007F70CF /* classifierTableViewCell.swift */; };
+		2E090FF5297354DE00E6CA05 /* cartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E090FF4297354DE00E6CA05 /* cartTableViewCell.swift */; };
+		2E090FF72974235900E6CA05 /* paymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E090FF62974235900E6CA05 /* paymentViewController.swift */; };
+		2E090FF929749FDD00E6CA05 /* checkoutDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E090FF829749FDD00E6CA05 /* checkoutDataModel.swift */; };
+		2E090FFB2974A51200E6CA05 /* paymentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E090FFA2974A51200E6CA05 /* paymentConfiguration.swift */; };
+		2E090FFD29756E4800E6CA05 /* paymentGatewayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E090FFC29756E4700E6CA05 /* paymentGatewayController.swift */; };
+		2E1793F629241D58005F85C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1793F529241D58005F85C5 /* AppDelegate.swift */; };
+		2E1793F829241D58005F85C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1793F729241D58005F85C5 /* SceneDelegate.swift */; };
+		2E1793FD29241D58005F85C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1793FB29241D58005F85C5 /* Main.storyboard */; };
+		2E17940029241D58005F85C5 /* grocery_delivery_app_final_year_project_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E1793FE29241D58005F85C5 /* grocery_delivery_app_final_year_project_.xcdatamodeld */; };
+		2E17940229241D5A005F85C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E17940129241D5A005F85C5 /* Assets.xcassets */; };
+		2E17940529241D5A005F85C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E17940329241D5A005F85C5 /* LaunchScreen.storyboard */; };
+		2E17941029241D5B005F85C5 /* grocery_delivery_app_final_year_project_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17940F29241D5B005F85C5 /* grocery_delivery_app_final_year_project_Tests.swift */; };
+		2E17941A29241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17941929241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITests.swift */; };
+		2E17941C29241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17941B29241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITestsLaunchTests.swift */; };
+		2E1B75E829A26E0300F8DDD0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B75E729A26E0300F8DDD0 /* AccountViewController.swift */; };
+		2E1B75EA29A27A0F00F8DDD0 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B75E929A27A0F00F8DDD0 /* AccountTableViewCell.swift */; };
+		2E1B75F229A2F02D00F8DDD0 /* ordersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B75F129A2F02D00F8DDD0 /* ordersViewController.swift */; };
+		2E1B75F429A40CAA00F8DDD0 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B75F329A40CAA00F8DDD0 /* OrderTableViewCell.swift */; };
+		2E293E86296DCE680065C9ED /* favoritesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E293E85296DCE680065C9ED /* favoritesCollectionViewCell.swift */; };
+		2E33218E29BFD0AC0052A727 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33218D29BFD0AC0052A727 /* AccountDetailsViewController.swift */; };
+		2E3B732029EC5F8D0069428A /* helpbot-xqkd-f0ac16d69378.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B731F29EC5F8D0069428A /* helpbot-xqkd-f0ac16d69378.json */; };
+		2E529346292AEDAA00E161B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E529345292AEDA900E161B9 /* GoogleService-Info.plist */; };
+		2E529347292AEDAA00E161B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E529345292AEDA900E161B9 /* GoogleService-Info.plist */; };
+		2E529348292AEDAA00E161B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E529345292AEDA900E161B9 /* GoogleService-Info.plist */; };
+		2E6AF5882991728A000D75DB /* favoritesTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6AF5872991728A000D75DB /* favoritesTabTableViewCell.swift */; };
+		2E6AF58C2994435D000D75DB /* restaurantCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6AF58B2994435D000D75DB /* restaurantCatViewController.swift */; };
+		2E6AF58E29945C62000D75DB /* categoriesViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6AF58D29945C62000D75DB /* categoriesViewCollectionViewCell.swift */; };
+		2E90D2092B97B03000E440DC /* foodclassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2E90D2082B97B03000E440DC /* foodclassifier.mlmodel */; };
+		2EA31619296F0A6000D17496 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA31618296F0A6000D17496 /* CartViewController.swift */; };
+		2EA3161B296F170600D17496 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3161A296F170600D17496 /* MenuViewController.swift */; };
+		2EA31621296F525B00D17496 /* menuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA31620296F525B00D17496 /* menuTableViewCell.swift */; };
+		2ECBB548298B0A39005CB8E3 /* favoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECBB547298B0A39005CB8E3 /* favoritesViewController.swift */; };
+		2ED425EB296AEB96003F4F14 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED425EA296AEB96003F4F14 /* CollectionViewCell.swift */; };
+		2ED425ED296AED54003F4F14 /* dataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED425EC296AED54003F4F14 /* dataModel.swift */; };
+		2EDDE8FE297203F500232B05 /* addToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDDE8FD297203F500232B05 /* addToCartViewController.swift */; };
+		2EE39E442936E4DD00F076A5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE39E432936E4DD00F076A5 /* CategoryCollectionViewCell.swift */; };
+		2EE39E4929396C2300F076A5 /* GetinfoIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE39E4829396C2300F076A5 /* GetinfoIViewController.swift */; };
+		2EE4E72B292C481300845762 /* CustomTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E72A292C481300845762 /* CustomTextFields.swift */; };
+		2EE4E72D292C500A00845762 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E72C292C500A00845762 /* LoginViewController.swift */; };
+		2EE4E72F292DA24F00845762 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E72E292DA24F00845762 /* InitialViewController.swift */; };
+		2EE4E731292EF01900845762 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE4E730292EF01900845762 /* HomeViewController.swift */; };
+		2EF5C008293270DF00BB68B8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5C007293270DF00BB68B8 /* SignUpViewController.swift */; };
+		2EFB3C9729E4AB480068D3E1 /* classifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB3C9629E4AB480068D3E1 /* classifierViewController.swift */; };
+		372B3FAF30527AC015175F2E /* Pods_grocery_delivery_app_final_year_project_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C29371452E4ED76F750901 /* Pods_grocery_delivery_app_final_year_project_Tests.framework */; };
+		6ED9991D2310B1FEB87C0908 /* Pods_grocery_delivery_app_final_year_project_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242E70FA73394A48791075D4 /* Pods_grocery_delivery_app_final_year_project_.framework */; };
+		78F597CE87E52100607F1435 /* Pods_grocery_delivery_app_final_year_project__grocery_delivery_app_final_year_project_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCFAA6F5698FAC70384116D /* Pods_grocery_delivery_app_final_year_project__grocery_delivery_app_final_year_project_UITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E17940C29241D5B005F85C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E1793EA29241D57005F85C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E1793F129241D58005F85C5;
+			remoteInfo = "grocery delivery app(final year project)";
+		};
+		2E17941629241D5B005F85C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E1793EA29241D57005F85C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E1793F129241D58005F85C5;
+			remoteInfo = "grocery delivery app(final year project)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		242E70FA73394A48791075D4 /* Pods_grocery_delivery_app_final_year_project_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grocery_delivery_app_final_year_project_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E01BAC029EB4E2E007F70CF /* classifierTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classifierTableViewCell.swift; sourceTree = "<group>"; };
+		2E090FF4297354DE00E6CA05 /* cartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartTableViewCell.swift; sourceTree = "<group>"; };
+		2E090FF62974235900E6CA05 /* paymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentViewController.swift; sourceTree = "<group>"; };
+		2E090FF829749FDD00E6CA05 /* checkoutDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkoutDataModel.swift; sourceTree = "<group>"; };
+		2E090FFA2974A51200E6CA05 /* paymentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentConfiguration.swift; sourceTree = "<group>"; };
+		2E090FFC29756E4700E6CA05 /* paymentGatewayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentGatewayController.swift; sourceTree = "<group>"; };
+		2E1793F229241D58005F85C5 /* grocery delivery app(final year project).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grocery delivery app(final year project).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1793F529241D58005F85C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E1793F729241D58005F85C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E1793FC29241D58005F85C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E1793FF29241D58005F85C5 /* grocery_delivery_app_final_year_project_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = grocery_delivery_app_final_year_project_.xcdatamodel; sourceTree = "<group>"; };
+		2E17940129241D5A005F85C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E17940429241D5A005F85C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E17940629241D5A005F85C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E17940B29241D5B005F85C5 /* grocery delivery app(final year project)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grocery delivery app(final year project)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E17940F29241D5B005F85C5 /* grocery_delivery_app_final_year_project_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grocery_delivery_app_final_year_project_Tests.swift; sourceTree = "<group>"; };
+		2E17941529241D5B005F85C5 /* grocery delivery app(final year project)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grocery delivery app(final year project)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E17941929241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grocery_delivery_app_final_year_project_UITests.swift; sourceTree = "<group>"; };
+		2E17941B29241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grocery_delivery_app_final_year_project_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E1B75E729A26E0300F8DDD0 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		2E1B75E929A27A0F00F8DDD0 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		2E1B75F129A2F02D00F8DDD0 /* ordersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ordersViewController.swift; sourceTree = "<group>"; };
+		2E1B75F329A40CAA00F8DDD0 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		2E293E85296DCE680065C9ED /* favoritesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E33218D29BFD0AC0052A727 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
+		2E3B731F29EC5F8D0069428A /* helpbot-xqkd-f0ac16d69378.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "helpbot-xqkd-f0ac16d69378.json"; sourceTree = "<group>"; };
+		2E529345292AEDA900E161B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E6AF5872991728A000D75DB /* favoritesTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesTabTableViewCell.swift; sourceTree = "<group>"; };
+		2E6AF58B2994435D000D75DB /* restaurantCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantCatViewController.swift; sourceTree = "<group>"; };
+		2E6AF58D29945C62000D75DB /* categoriesViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E90D2082B97B03000E440DC /* foodclassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = foodclassifier.mlmodel; sourceTree = "<group>"; };
+		2EA31618296F0A6000D17496 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		2EA3161A296F170600D17496 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2EA31620296F525B00D17496 /* menuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuTableViewCell.swift; sourceTree = "<group>"; };
+		2ECBB547298B0A39005CB8E3 /* favoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesViewController.swift; sourceTree = "<group>"; };
+		2ED425EA296AEB96003F4F14 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2ED425EC296AED54003F4F14 /* dataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataModel.swift; sourceTree = "<group>"; };
+		2EDDE8FD297203F500232B05 /* addToCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addToCartViewController.swift; sourceTree = "<group>"; };
+		2EE39E432936E4DD00F076A5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EE39E4829396C2300F076A5 /* GetinfoIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetinfoIViewController.swift; sourceTree = "<group>"; };
+		2EE4E72A292C481300845762 /* CustomTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFields.swift; sourceTree = "<group>"; };
+		2EE4E72C292C500A00845762 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2EE4E72E292DA24F00845762 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		2EE4E730292EF01900845762 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2EF5C007293270DF00BB68B8 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2EF5C0092935609C00BB68B8 /* grocery delivery app(final year project).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "grocery delivery app(final year project).entitlements"; sourceTree = "<group>"; };
+		2EFB3C9629E4AB480068D3E1 /* classifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classifierViewController.swift; sourceTree = "<group>"; };
+		3589DE0D3D42AA799F220808 /* Pods-grocery delivery app(final year project).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grocery delivery app(final year project).release.xcconfig"; path = "Target Support Files/Pods-grocery delivery app(final year project)/Pods-grocery delivery app(final year project).release.xcconfig"; sourceTree = "<group>"; };
+		3DCFAA6F5698FAC70384116D /* Pods_grocery_delivery_app_final_year_project__grocery_delivery_app_final_year_project_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grocery_delivery_app_final_year_project__grocery_delivery_app_final_year_project_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D57A2DBFDD715B44824D005 /* Pods-grocery delivery app(final year project)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grocery delivery app(final year project)Tests.release.xcconfig"; path = "Target Support Files/Pods-grocery delivery app(final year project)Tests/Pods-grocery delivery app(final year project)Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6EDE5D84F5DD13A3DD545967 /* Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.release.xcconfig"; path = "Target Support Files/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.release.xcconfig"; sourceTree = "<group>"; };
+		76D4D778BE1EE64385B969F3 /* Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.debug.xcconfig"; path = "Target Support Files/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		92C29371452E4ED76F750901 /* Pods_grocery_delivery_app_final_year_project_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grocery_delivery_app_final_year_project_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A37FB7166775D4506941CADE /* Pods-grocery delivery app(final year project).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grocery delivery app(final year project).debug.xcconfig"; path = "Target Support Files/Pods-grocery delivery app(final year project)/Pods-grocery delivery app(final year project).debug.xcconfig"; sourceTree = "<group>"; };
+		E9ADA7782C96430E61A3973F /* Pods-grocery delivery app(final year project)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grocery delivery app(final year project)Tests.debug.xcconfig"; path = "Target Support Files/Pods-grocery delivery app(final year project)Tests/Pods-grocery delivery app(final year project)Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E1793EF29241D58005F85C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED9991D2310B1FEB87C0908 /* Pods_grocery_delivery_app_final_year_project_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E17940829241D5B005F85C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372B3FAF30527AC015175F2E /* Pods_grocery_delivery_app_final_year_project_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E17941229241D5B005F85C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F597CE87E52100607F1435 /* Pods_grocery_delivery_app_final_year_project__grocery_delivery_app_final_year_project_UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E01BABF29E9F4B8007F70CF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2E90D2082B97B03000E440DC /* foodclassifier.mlmodel */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2E1793E929241D57005F85C5 = {
+			isa = PBXGroup;
+			children = (
+				2E1793F429241D58005F85C5 /* grocery delivery app(final year project) */,
+				2E01BABF29E9F4B8007F70CF /* model */,
+				2E17940E29241D5B005F85C5 /* grocery delivery app(final year project)Tests */,
+				2E17941829241D5B005F85C5 /* grocery delivery app(final year project)UITests */,
+				2E1793F329241D58005F85C5 /* Products */,
+				48153E0E44B7FE4A7474EB67 /* Pods */,
+				C854A586EDCA69F3745E281F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E1793F329241D58005F85C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E1793F229241D58005F85C5 /* grocery delivery app(final year project).app */,
+				2E17940B29241D5B005F85C5 /* grocery delivery app(final year project)Tests.xctest */,
+				2E17941529241D5B005F85C5 /* grocery delivery app(final year project)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E1793F429241D58005F85C5 /* grocery delivery app(final year project) */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5C0092935609C00BB68B8 /* grocery delivery app(final year project).entitlements */,
+				2E1793FB29241D58005F85C5 /* Main.storyboard */,
+				2E17940329241D5A005F85C5 /* LaunchScreen.storyboard */,
+				2E01BAC029EB4E2E007F70CF /* classifierTableViewCell.swift */,
+				2EFB3C9629E4AB480068D3E1 /* classifierViewController.swift */,
+				2E1B75F129A2F02D00F8DDD0 /* ordersViewController.swift */,
+				2E33218D29BFD0AC0052A727 /* AccountDetailsViewController.swift */,
+				2E1B75F329A40CAA00F8DDD0 /* OrderTableViewCell.swift */,
+				2E1B75E929A27A0F00F8DDD0 /* AccountTableViewCell.swift */,
+				2E1B75E729A26E0300F8DDD0 /* AccountViewController.swift */,
+				2E6AF58B2994435D000D75DB /* restaurantCatViewController.swift */,
+				2E6AF58D29945C62000D75DB /* categoriesViewCollectionViewCell.swift */,
+				2E6AF5872991728A000D75DB /* favoritesTabTableViewCell.swift */,
+				2E090FF4297354DE00E6CA05 /* cartTableViewCell.swift */,
+				2E090FF62974235900E6CA05 /* paymentViewController.swift */,
+				2E090FFC29756E4700E6CA05 /* paymentGatewayController.swift */,
+				2E090FFA2974A51200E6CA05 /* paymentConfiguration.swift */,
+				2E1793F529241D58005F85C5 /* AppDelegate.swift */,
+				2E1793F729241D58005F85C5 /* SceneDelegate.swift */,
+				2EA31620296F525B00D17496 /* menuTableViewCell.swift */,
+				2EA3161A296F170600D17496 /* MenuViewController.swift */,
+				2EA31618296F0A6000D17496 /* CartViewController.swift */,
+				2ED425EA296AEB96003F4F14 /* CollectionViewCell.swift */,
+				2EE39E4829396C2300F076A5 /* GetinfoIViewController.swift */,
+				2EE39E432936E4DD00F076A5 /* CategoryCollectionViewCell.swift */,
+				2EE4E730292EF01900845762 /* HomeViewController.swift */,
+				2EE4E72E292DA24F00845762 /* InitialViewController.swift */,
+				2EE4E72A292C481300845762 /* CustomTextFields.swift */,
+				2EE4E72C292C500A00845762 /* LoginViewController.swift */,
+				2EF5C007293270DF00BB68B8 /* SignUpViewController.swift */,
+				2ED425EC296AED54003F4F14 /* dataModel.swift */,
+				2E293E85296DCE680065C9ED /* favoritesCollectionViewCell.swift */,
+				2ECBB547298B0A39005CB8E3 /* favoritesViewController.swift */,
+				2EDDE8FD297203F500232B05 /* addToCartViewController.swift */,
+				2E090FF829749FDD00E6CA05 /* checkoutDataModel.swift */,
+				2E3B731F29EC5F8D0069428A /* helpbot-xqkd-f0ac16d69378.json */,
+				2E17940129241D5A005F85C5 /* Assets.xcassets */,
+				2E17940629241D5A005F85C5 /* Info.plist */,
+				2E1793FE29241D58005F85C5 /* grocery_delivery_app_final_year_project_.xcdatamodeld */,
+			);
+			path = "grocery delivery app(final year project)";
+			sourceTree = "<group>";
+		};
+		2E17940E29241D5B005F85C5 /* grocery delivery app(final year project)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2E17940F29241D5B005F85C5 /* grocery_delivery_app_final_year_project_Tests.swift */,
+			);
+			path = "grocery delivery app(final year project)Tests";
+			sourceTree = "<group>";
+		};
+		2E17941829241D5B005F85C5 /* grocery delivery app(final year project)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E17941929241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITests.swift */,
+				2E17941B29241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITestsLaunchTests.swift */,
+				2E529345292AEDA900E161B9 /* GoogleService-Info.plist */,
+			);
+			path = "grocery delivery app(final year project)UITests";
+			sourceTree = "<group>";
+		};
+		48153E0E44B7FE4A7474EB67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A37FB7166775D4506941CADE /* Pods-grocery delivery app(final year project).debug.xcconfig */,
+				3589DE0D3D42AA799F220808 /* Pods-grocery delivery app(final year project).release.xcconfig */,
+				76D4D778BE1EE64385B969F3 /* Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.debug.xcconfig */,
+				6EDE5D84F5DD13A3DD545967 /* Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.release.xcconfig */,
+				E9ADA7782C96430E61A3973F /* Pods-grocery delivery app(final year project)Tests.debug.xcconfig */,
+				4D57A2DBFDD715B44824D005 /* Pods-grocery delivery app(final year project)Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C854A586EDCA69F3745E281F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				242E70FA73394A48791075D4 /* Pods_grocery_delivery_app_final_year_project_.framework */,
+				3DCFAA6F5698FAC70384116D /* Pods_grocery_delivery_app_final_year_project__grocery_delivery_app_final_year_project_UITests.framework */,
+				92C29371452E4ED76F750901 /* Pods_grocery_delivery_app_final_year_project_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E1793F129241D58005F85C5 /* grocery delivery app(final year project) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E17941F29241D5B005F85C5 /* Build configuration list for PBXNativeTarget "grocery delivery app(final year project)" */;
+			buildPhases = (
+				B4FBEA4DCD9BDD1E7AD8B9D6 /* [CP] Check Pods Manifest.lock */,
+				2E1793EE29241D58005F85C5 /* Sources */,
+				2E1793EF29241D58005F85C5 /* Frameworks */,
+				2E1793F029241D58005F85C5 /* Resources */,
+				91DD91E589D88D2A34D07675 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "grocery delivery app(final year project)";
+			productName = "grocery delivery app(final year project)";
+			productReference = 2E1793F229241D58005F85C5 /* grocery delivery app(final year project).app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E17940A29241D5B005F85C5 /* grocery delivery app(final year project)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E17942229241D5B005F85C5 /* Build configuration list for PBXNativeTarget "grocery delivery app(final year project)Tests" */;
+			buildPhases = (
+				0DAAD72304541D2A9E74106E /* [CP] Check Pods Manifest.lock */,
+				2E17940729241D5B005F85C5 /* Sources */,
+				2E17940829241D5B005F85C5 /* Frameworks */,
+				2E17940929241D5B005F85C5 /* Resources */,
+				62C6AD9280311BF87CFD0D1F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E17940D29241D5B005F85C5 /* PBXTargetDependency */,
+			);
+			name = "grocery delivery app(final year project)Tests";
+			productName = "grocery delivery app(final year project)Tests";
+			productReference = 2E17940B29241D5B005F85C5 /* grocery delivery app(final year project)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E17941429241D5B005F85C5 /* grocery delivery app(final year project)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E17942529241D5B005F85C5 /* Build configuration list for PBXNativeTarget "grocery delivery app(final year project)UITests" */;
+			buildPhases = (
+				58EAAA14FF5543E82CBAACC5 /* [CP] Check Pods Manifest.lock */,
+				2E17941129241D5B005F85C5 /* Sources */,
+				2E17941229241D5B005F85C5 /* Frameworks */,
+				2E17941329241D5B005F85C5 /* Resources */,
+				2901212922B376C9C90196A4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E17941729241D5B005F85C5 /* PBXTargetDependency */,
+			);
+			name = "grocery delivery app(final year project)UITests";
+			productName = "grocery delivery app(final year project)UITests";
+			productReference = 2E17941529241D5B005F85C5 /* grocery delivery app(final year project)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E1793EA29241D57005F85C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					2E1793F129241D58005F85C5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2E17940A29241D5B005F85C5 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 2E1793F129241D58005F85C5;
+					};
+					2E17941429241D5B005F85C5 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 2E1793F129241D58005F85C5;
+					};
+				};
+			};
+			buildConfigurationList = 2E1793ED29241D57005F85C5 /* Build configuration list for PBXProject "grocery delivery app(final year project)" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E1793E929241D57005F85C5;
+			productRefGroup = 2E1793F329241D58005F85C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E1793F129241D58005F85C5 /* grocery delivery app(final year project) */,
+				2E17940A29241D5B005F85C5 /* grocery delivery app(final year project)Tests */,
+				2E17941429241D5B005F85C5 /* grocery delivery app(final year project)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E1793F029241D58005F85C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3B732029EC5F8D0069428A /* helpbot-xqkd-f0ac16d69378.json in Resources */,
+				2E17940529241D5A005F85C5 /* LaunchScreen.storyboard in Resources */,
+				2E529346292AEDAA00E161B9 /* GoogleService-Info.plist in Resources */,
+				2E17940229241D5A005F85C5 /* Assets.xcassets in Resources */,
+				2E1793FD29241D58005F85C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E17940929241D5B005F85C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E529347292AEDAA00E161B9 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E17941329241D5B005F85C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E529348292AEDAA00E161B9 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DAAD72304541D2A9E74106E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grocery delivery app(final year project)Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2901212922B376C9C90196A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58EAAA14FF5543E82CBAACC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62C6AD9280311BF87CFD0D1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)Tests/Pods-grocery delivery app(final year project)Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)Tests/Pods-grocery delivery app(final year project)Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)Tests/Pods-grocery delivery app(final year project)Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91DD91E589D88D2A34D07675 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)/Pods-grocery delivery app(final year project)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)/Pods-grocery delivery app(final year project)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grocery delivery app(final year project)/Pods-grocery delivery app(final year project)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4FBEA4DCD9BDD1E7AD8B9D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-grocery delivery app(final year project)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E1793EE29241D58005F85C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE4E72D292C500A00845762 /* LoginViewController.swift in Sources */,
+				2E6AF58E29945C62000D75DB /* categoriesViewCollectionViewCell.swift in Sources */,
+				2EA3161B296F170600D17496 /* MenuViewController.swift in Sources */,
+				2EE4E72B292C481300845762 /* CustomTextFields.swift in Sources */,
+				2EA31619296F0A6000D17496 /* CartViewController.swift in Sources */,
+				2EF5C008293270DF00BB68B8 /* SignUpViewController.swift in Sources */,
+				2E1B75F429A40CAA00F8DDD0 /* OrderTableViewCell.swift in Sources */,
+				2E090FFB2974A51200E6CA05 /* paymentConfiguration.swift in Sources */,
+				2ECBB548298B0A39005CB8E3 /* favoritesViewController.swift in Sources */,
+				2E1B75E829A26E0300F8DDD0 /* AccountViewController.swift in Sources */,
+				2E090FF5297354DE00E6CA05 /* cartTableViewCell.swift in Sources */,
+				2E17940029241D58005F85C5 /* grocery_delivery_app_final_year_project_.xcdatamodeld in Sources */,
+				2EDDE8FE297203F500232B05 /* addToCartViewController.swift in Sources */,
+				2E1B75F229A2F02D00F8DDD0 /* ordersViewController.swift in Sources */,
+				2EE39E442936E4DD00F076A5 /* CategoryCollectionViewCell.swift in Sources */,
+				2ED425ED296AED54003F4F14 /* dataModel.swift in Sources */,
+				2EE4E72F292DA24F00845762 /* InitialViewController.swift in Sources */,
+				2E1793F629241D58005F85C5 /* AppDelegate.swift in Sources */,
+				2E6AF58C2994435D000D75DB /* restaurantCatViewController.swift in Sources */,
+				2E90D2092B97B03000E440DC /* foodclassifier.mlmodel in Sources */,
+				2E090FF72974235900E6CA05 /* paymentViewController.swift in Sources */,
+				2E01BAC129EB4E2E007F70CF /* classifierTableViewCell.swift in Sources */,
+				2EA31621296F525B00D17496 /* menuTableViewCell.swift in Sources */,
+				2E293E86296DCE680065C9ED /* favoritesCollectionViewCell.swift in Sources */,
+				2E090FF929749FDD00E6CA05 /* checkoutDataModel.swift in Sources */,
+				2EE39E4929396C2300F076A5 /* GetinfoIViewController.swift in Sources */,
+				2EE4E731292EF01900845762 /* HomeViewController.swift in Sources */,
+				2E090FFD29756E4800E6CA05 /* paymentGatewayController.swift in Sources */,
+				2E33218E29BFD0AC0052A727 /* AccountDetailsViewController.swift in Sources */,
+				2E1793F829241D58005F85C5 /* SceneDelegate.swift in Sources */,
+				2E1B75EA29A27A0F00F8DDD0 /* AccountTableViewCell.swift in Sources */,
+				2EFB3C9729E4AB480068D3E1 /* classifierViewController.swift in Sources */,
+				2ED425EB296AEB96003F4F14 /* CollectionViewCell.swift in Sources */,
+				2E6AF5882991728A000D75DB /* favoritesTabTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E17940729241D5B005F85C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E17941029241D5B005F85C5 /* grocery_delivery_app_final_year_project_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E17941129241D5B005F85C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E17941C29241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITestsLaunchTests.swift in Sources */,
+				2E17941A29241D5B005F85C5 /* grocery_delivery_app_final_year_project_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E17940D29241D5B005F85C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E1793F129241D58005F85C5 /* grocery delivery app(final year project) */;
+			targetProxy = 2E17940C29241D5B005F85C5 /* PBXContainerItemProxy */;
+		};
+		2E17941729241D5B005F85C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E1793F129241D58005F85C5 /* grocery delivery app(final year project) */;
+			targetProxy = 2E17941629241D5B005F85C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E1793FB29241D58005F85C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E1793FC29241D58005F85C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E17940329241D5A005F85C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E17940429241D5A005F85C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E17941D29241D5B005F85C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E17941E29241D5B005F85C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E17942029241D5B005F85C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A37FB7166775D4506941CADE /* Pods-grocery delivery app(final year project).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "grocery delivery app(final year project)/grocery delivery app(final year project).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79Y4XMKT6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "grocery delivery app(final year project)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ope.grocery-delivery-app-final-year-project-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E17942129241D5B005F85C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3589DE0D3D42AA799F220808 /* Pods-grocery delivery app(final year project).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "grocery delivery app(final year project)/grocery delivery app(final year project).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79Y4XMKT6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "grocery delivery app(final year project)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ope.grocery-delivery-app-final-year-project-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E17942329241D5B005F85C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9ADA7782C96430E61A3973F /* Pods-grocery delivery app(final year project)Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79Y4XMKT6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ope.grocery-delivery-app-final-year-project-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grocery delivery app(final year project).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/grocery delivery app(final year project)";
+			};
+			name = Debug;
+		};
+		2E17942429241D5B005F85C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D57A2DBFDD715B44824D005 /* Pods-grocery delivery app(final year project)Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79Y4XMKT6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ope.grocery-delivery-app-final-year-project-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/grocery delivery app(final year project).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/grocery delivery app(final year project)";
+			};
+			name = Release;
+		};
+		2E17942629241D5B005F85C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D4D778BE1EE64385B969F3 /* Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79Y4XMKT6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ope.grocery-delivery-app-final-year-project-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "grocery delivery app(final year project)";
+			};
+			name = Debug;
+		};
+		2E17942729241D5B005F85C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EDE5D84F5DD13A3DD545967 /* Pods-grocery delivery app(final year project)-grocery delivery app(final year project)UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79Y4XMKT6F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ope.grocery-delivery-app-final-year-project-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "grocery delivery app(final year project)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E1793ED29241D57005F85C5 /* Build configuration list for PBXProject "grocery delivery app(final year project)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E17941D29241D5B005F85C5 /* Debug */,
+				2E17941E29241D5B005F85C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E17941F29241D5B005F85C5 /* Build configuration list for PBXNativeTarget "grocery delivery app(final year project)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E17942029241D5B005F85C5 /* Debug */,
+				2E17942129241D5B005F85C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E17942229241D5B005F85C5 /* Build configuration list for PBXNativeTarget "grocery delivery app(final year project)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E17942329241D5B005F85C5 /* Debug */,
+				2E17942429241D5B005F85C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E17942529241D5B005F85C5 /* Build configuration list for PBXNativeTarget "grocery delivery app(final year project)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E17942629241D5B005F85C5 /* Debug */,
+				2E17942729241D5B005F85C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E1793FE29241D58005F85C5 /* grocery_delivery_app_final_year_project_.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E1793FF29241D58005F85C5 /* grocery_delivery_app_final_year_project_.xcdatamodel */,
+			);
+			currentVersion = 2E1793FF29241D58005F85C5 /* grocery_delivery_app_final_year_project_.xcdatamodel */;
+			path = grocery_delivery_app_final_year_project_.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E1793EA29241D57005F85C5 /* Project object */;
+}
