@@ -40,11 +40,10 @@ class classifierViewController: UIViewController,UITableViewDelegate,UITableView
             guard let buffer = Image.image?.getCVPixelBuffer() else { return }
             let model = try foodclassifier(configuration: config)
             let input = foodclassifierInput(image: buffer)
-            //let output = try model.prediction(input: input)
+            let output = try model.prediction(input: input)
             let output2 = try model.prediction(image: buffer)
             
             className = output2.classLabel.replacingOccurrences(of: "_", with: " ")
-            print(className)
             label.text = className
             filterArray(className)
             tableView.reloadData()
@@ -100,14 +99,11 @@ class classifierViewController: UIViewController,UITableViewDelegate,UITableView
     
     //MARK: TABLEVIEW METHODS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(newRestArray.count)
         return newRestArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! classifierTableViewCell
-        print(newRestArray)
-        print(className)
         cell.accessoryType = .disclosureIndicator
         cell.nameLabel.text = newRestArray[indexPath.row]["name"]
         cell.priceLabel.text = newRestArray[indexPath.row]["price"]
@@ -149,9 +145,9 @@ class classifierViewController: UIViewController,UITableViewDelegate,UITableView
     
     func filterArray(_ foodName: String){
         for dict in restArray{
-            print(dict)
             if dict.isEmpty == false{
-                if ((dict["name"]!.contains(foodName))){
+                print(dict["name"]!)
+                if ((dict["name"]!.lowercased().contains(foodName.lowercased()))){
                     newRestArray.append(dict)
                 }
             }
