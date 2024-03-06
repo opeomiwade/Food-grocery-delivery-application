@@ -12,5 +12,6 @@ This project is a Food/Grocery Delivery Application developed using Swift (iOS),
 - **Chatbot**: Implemented a chatbot using Google API and Dialogflow to enhance user interaction and support.
 
 # Installation
-- cone the repo, using the `git clone https://github.com/opeomiwade/Food-grocery-delivery-application.git`
-- Open the .xcworkspace file with xcode and run the app on xcode simulator
+- clone the repo, using the `git clone https://github.com/opeomiwade/Food-grocery-delivery-application.git`.
+- cd to the project folder and run `pod install` to install all dependecies.
+- Open the .xcworkspace file with xcode and run the app on xcode simulator.
