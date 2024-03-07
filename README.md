@@ -1,6 +1,6 @@
 # Food/Grocery Delivery Application
 
-This project is a Food/Grocery Delivery Application developed using Swift (iOS), Node.js, Firebase, Stripe, Back4App, and various APIs. It was created as part of the University of Liverpool coursework and achieved a first-class grade, demonstrating a comprehensive understanding of the technologies involved.
+This project is a Food/Grocery Delivery Application developed using Swift (iOS), Node.js, Firebase, Stripe, Back4App, and various APIs.
 
 # Key Features
 
