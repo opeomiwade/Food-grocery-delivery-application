@@ -14,6 +14,9 @@ target 'grocery delivery app(final year project)' do
 	pod 'GoogleSignIn'
 	pod 'Kommunicate'
 
+ # Ensure Bolts pod has a minimum deployment target of iOS 16.0
+  	pod 'Bolts', '~> 1.9', :platforms => [:ios], :deployment_target => '16.0'
+
 	
 
 	
